@@ -1,196 +1,69 @@
-# E_Commerce Analysis 📊
+# 📊 E-Commerce & Retail Sales Analysis
 
-An end-to-end **E-Commerce Data Analysis Project** built using **Excel, SQL, and Power BI** to analyze sales performance, customer behavior, pricing trends, discount impact, and product hierarchy insights.
-
-This project demonstrates a real-world business intelligence workflow including:
-- Data Cleaning
-- Data Analysis
-- SQL Querying
-- Dashboard Creation
-- KPI Tracking
-- Business Insights & Recommendations
+An end-to-end data analytics project combining **Python (Pandas)**, **SQL**, **Power BI**, and **Excel** to analyze transactional sales data, customer behavior, and pricing strategies.
 
 ---
 
-# 📌 Project Objective
+## 📌 Project Overview
+This project processes raw e-commerce sales datasets across product hierarchies and customer transactions to identify key revenue drivers, assess discount impact, and evaluate customer loyalty performance.
 
-The objective of this project is to analyze an e-commerce company's sales data and generate actionable business insights related to:
-
-- Revenue performance
-- Product sales trends
-- Customer contribution
-- Discount effectiveness
-- Category-wise analysis
-- Product hierarchy distribution
+### Key Objectives:
+* Analyze net revenue, order volumes, and average transaction values.
+* Segment performance across product categories and sub-categories.
+* Evaluate customer contribution based on **Loyalty Member Status**.
+* Measure the business impact of pricing and discount strategies.
 
 ---
 
-# 🛠️ Tools & Technologies Used
-
-| Tool | Purpose |
-|------|----------|
-| Excel | Data cleaning, VLOOKUP, SUMIF, Pivot Tables |
-| SQL | Data querying, joins, aggregations, window functions |
-| Power BI | Interactive dashboard and KPI visualization |
-
----
-
-# 📂 Project Files
-
-- Excel Solution File
-- SQL Queries File
-- Power BI Dashboard (.pbix)
-- Presentation PPT
-- Dataset Files
+## 🛠️ Tools & Technologies
+| Tool / Language | Purpose & Application |
+| :--- | :--- |
+| **Python (Jupyter)** | Exploratory Data Analysis (EDA), data cleaning, data type conversion, and distribution analysis (`Pandas`, `Matplotlib`). |
+| **SQL Server** | Complex data querying, multi-table joins (`INNER JOIN`), aggregation, CTEs, and ranking using window functions (`RANK()`). |
+| **Power BI** | Interactive dashboard development, data modeling, DAX measures, KPI cards, and dynamic slicers. |
+| **Microsoft Excel** | Initial data inspection, formula validation (`VLOOKUP`, `SUMIF`), and quick summaries using Pivot Tables. |
 
 ---
 
-# 📊 Dataset Information
+## 📂 Project Structure
+```text
+├── retail_analysis_project.ipynb         # Python notebook for EDA & Data Preprocessing
+├── sql analysis.sql                       # Queries for data aggregation & ranking
+├── power bi dashboard.pbix                # Dynamic Power BI dashboard file
+├── excel_analysis.xlsx                    # Data validation & Pivot Table summaries
+├── E_Commerce_Data_Analysis_Presentation  # Project summary slides (PPTX)
+└── README.md                              # Documentation
 
-The project uses 3 datasets:
+Analytical Workflow & Insights
+1. Data Cleaning & Python EDA
+Handled missing values and verified data types across transaction timestamps and numeric columns.
 
-## 1. Product_Details
-Contains:
-- Product ID
-- Product Name
-- Category
-- Segment
-- Style
-- Price
+Examined customer segmentation to analyze spending habits between member and non-member accounts.
 
-## 2. Product_Sales
-Contains:
-- Transaction ID
-- Product ID
-- Quantity
-- Discount
-- Member Status
-- Transaction Time
+2. SQL Querying & Business Logic
+Joined relational tables (Product_Details, Product_Sales, Product_Hierarchy) to build an analysis-ready structure.
 
-## 3. Product_Hierarchy
-Contains:
-- Category
-- Segment
-- Style hierarchy structure
+Utilized CTEs and Window Functions (RANK() OVER) to identify top-performing SKUs by net revenue within each product category.
 
----
+3. Power BI Dashboard Development
+Designed interactive KPI cards tracking Net Revenue, Average Order Value (AOV), and Average Price.
 
-# 🔍 Excel Analysis
+Implemented DAX measures to calculate discount impact percentages across different customer tiers.
 
-Performed:
-- VLOOKUP for data enrichment
-- SUMIF for aggregation
-- Pivot Tables
-- Revenue calculations
-- Charts and summaries
+💡 Key Findings
+Loyalty Members Contribution: Loyalty members generate over 60% of total revenue, making member conversion a primary revenue driver.
 
-### Key Excel Insights
-- Balanced sales between Mens & Womens categories
-- No duplicate products found
-- Revenue split nearly 50-50
+Discount Sensitivity: High discount rates on lower-margin Skews reduced overall profitability without significantly driving unit volume.
 
----
+Category Balance: Revenue distribution across Men's and Women's product lines remains balanced, though Men's products carry a higher average unit price.
 
-# 🗄️ SQL Analysis
+🚀 Recommendations
+Targeted Loyalty Conversion: Implement a post-checkout incentive to convert non-member buyers into loyalty members.
 
-Implemented:
-- INNER JOIN
-- GROUP BY
-- CTEs
-- Window Functions
-- RANK()
-- Revenue calculations
+Discount Optimisation: Restructure promotional discounts to protect margins on low-priced items while offering tiered rewards on high-value orders.
 
-### SQL Business Questions Solved
-- Top-selling products
-- Revenue by category
-- Category contribution %
-- Product ranking
-- Revenue ranking analysis
+Cross-Selling Opportunities: Bundle complementary items from different product hierarchies based on member purchase frequency.
 
----
-
-# 📈 Power BI Dashboard
-
-Created an interactive dashboard with:
-- KPI Cards
-- Revenue Analysis
-- Customer Contribution
-- Discount Impact
-- Average Price Analysis
-- Slicers & Filters
-
-### KPIs Included
-- Total Revenue
-- Net Revenue
-- Avg Price
-- Avg Discount %
-- Discount Impact
-
----
-
-# 💡 Key Business Insights
-
-- Loyalty members contribute more than 60% of revenue.
-- Discounts significantly impact net revenue.
-- Mens products have higher average prices.
-- Revenue distribution is balanced across categories.
-- Premium products contribute strongly to revenue.
-
----
-
-# ✅ Recommendations
-
-- Optimize discount strategy.
-- Increase loyalty membership conversion.
-- Expand premium product lines.
-- Monitor seasonal sales trends using dashboards.
-
----
-
-# 📚 Skills Demonstrated
-
-## Excel
-- VLOOKUP
-- SUMIF
-- Pivot Tables
-- Charts
-
-## SQL
-- JOINs
-- Aggregations
-- CTEs
-- Window Functions
-
-## Power BI
-- DAX Measures
-- Data Modeling
-- Dashboard Design
-- Interactive Visuals
-
----
-
-# 🚀 Future Improvements
-
-- Add time-series forecasting
-- Build customer segmentation model
-- Add advanced DAX calculations
-- Integrate Python analytics
-
----
-
-# 👨‍💻 Author
-
-**Harsh**
-
-Aspiring Data Analyst skilled in:
-- Excel
-- SQL
-- Power BI
-- Python
-
----
-
-# ⭐ If you like this project
-
+👨‍💻 Author
+Harsh Yadav
 Give this repository a ⭐ on GitHub.
